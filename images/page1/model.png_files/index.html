@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0623)https://play.gotolstoy.com/feed/hc5gzloxcqjxo?url=https%3A%2F%2Fwww.hellomolly.com%2Fcollections%2Fthe-main-event-rsvp-ready%2Fproducts%2Fsophisticated-style-long-sleeve-maxi-dress-wine&modalId=a369ac8a-329f-49b0-882d-bd241f9e9fb7&productId=7695204679766&currentPageDbProductId=8ab15a22-0270-496e-85f4-54f27b6aa783&host=&safari=false&dontDownload=false&playerType=stories&isShopifyStore=false&shopifyStoreUrl=hellomollyfashion-usa.myshopify.com&ai=4e46cf0d-e84a-4158-a4f5-0eab949db8fa&isShoppable=false&appKey=f8b76eb3-e00e-4a87-9e67-249362d163f7&pl=true&pv=1.0.0&isDynamic=true&shouldUseCache=true&cacheVersion=19a967da53a -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="https://play.gotolstoy.com/2.0.0-l/tolstoy.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <link rel="apple-touch-icon" href="https://play.gotolstoy.com/2.0.0-l/tolstoy.svg">
+    <link rel="manifest" href="data:application/json;base64,ewogICJzaG9ydF9uYW1lIjogIlRvbHN0b3kgUGxheWVyIiwKICAibmFtZSI6ICJUb2xzdG95IFBsYXllciIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAidGhlbWVfY29sb3IiOiAiIzAwMDAwMCIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIKfQo=">
+    <style>
+      /* Disable zooming but allow swiping */
+      html {
+        -webkit-text-size-adjust: 100%; /* Prevent text zoom in iOS */
+      }
+      body {
+        -webkit-overflow-scrolling: touch; /* Keep smooth scrolling */
+      }
+      .carousel-container, .swipeable-area {
+        touch-action: pan-x pan-y; /* Explicitly allow horizontal and vertical swiping */
+      }
+    </style>
+    <script>
+      window.prerenderReady = false;
+      
+      // Modified zoom prevention that preserves swiping
+      document.addEventListener('DOMContentLoaded', function () {
+        // Track pinch movements to differentiate from swipes
+        let initialTouchDistance = 0;
+        
+        document.addEventListener(
+          'touchstart',
+          function (e) {
+            // Only track multi-touch for pinch detection
+            if (e.touches.length > 1) {
+              initialTouchDistance = Math.hypot(
+                e.touches[0].pageX - e.touches[1].pageX,
+                e.touches[0].pageY - e.touches[1].pageY
+              );
+            }
+          },
+          { passive: true } // Use passive for better scroll performance
+        );
+        
+        document.addEventListener(
+          'touchmove',
+          function (e) {
+            // Allow all single-finger movements (swipes)
+            if (e.touches.length <= 1) return;
+            
+            if (e.touches.length > 1) {
+              // Calculate current distance between touch points
+              const currentDistance = Math.hypot(
+                e.touches[0].pageX - e.touches[1].pageX,
+                e.touches[0].pageY - e.touches[1].pageY
+              );
+              
+              // Only prevent pinch gestures
+              if (initialTouchDistance > 0 && 
+                  Math.abs(currentDistance - initialTouchDistance) > 10) {
+                e.preventDefault();
+              }
+            }
+            
+            // Prevent scale changes
+            if (e.scale !== undefined && e.scale !== 1) {
+              e.preventDefault();
+            }
+          },
+          { passive: false }
+        );
+        
+        // Prevent Safari-specific gesture events
+        document.addEventListener('gesturestart', function(e) {
+          e.preventDefault();
+        }, { passive: false });
+        
+        document.addEventListener('gesturechange', function(e) {
+          e.preventDefault();
+        }, { passive: false });
+        
+        // Prevent double-tap zoom
+        let lastTouchEnd = 0;
+        document.addEventListener(
+          'touchend',
+          function (e) {
+            initialTouchDistance = 0;
+            const now = Date.now();
+            if (now - lastTouchEnd < 300) {
+              e.preventDefault();
+            }
+            lastTouchEnd = now;
+          },
+          { passive: false }
+        );
+      });
+    </script>
+    <script type="module" crossorigin="" src="./index-b86b9c50.js"></script>
+    <script type="module">import.meta.url;import("_").catch(()=>1);async function* g(){};if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+
+  <body style="text-align: center">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule="" crossorigin="" id="vite-legacy-polyfill" src="./polyfills-legacy-f99d156c.js"></script>
+    <script nomodule="" crossorigin="" id="vite-legacy-entry" data-src="https://play.gotolstoy.com/2.0.0-l/assets/index-legacy-d43a2ee9.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  
+
+</body></html>
