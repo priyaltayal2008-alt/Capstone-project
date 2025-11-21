@@ -121,3 +121,30 @@ a{
 .filters #filter-section:hover{
     background-color: #ffd5e1;
 }
+
+.grid_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 60px;
+    width: 100vw;
+}
+
+.grid_section img{
+    width: 100%;
+    height: 100%;        
+    object-fit: cover;  
+    text-align: center; 
+    
+}
+.grid_section h3{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.grid_section span{
+    font-weight: bold;
+}
+
