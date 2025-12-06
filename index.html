@@ -30,12 +30,39 @@
             <button>🔍</button>
         </div>
         <div class="icons">
-            <i class="fa-regular fa-user"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-regular fa-user login"></i>
+            <i class="fa-regular fa-heart wishlist-icon"></i>
+            <i class="fa-solid fa-bag-shopping cart-icon"></i>
         </div>
     </div>
     
+    <!-- FOR WISHLIST PAGE JS -->
+     <!-- ................... -->
+    <div id="wishlistSlider" class="wishlist-panel">
+      <button id="closeBtn" class="close-btn" aria-label="Close wishlist">x</button>
+      <h2>Your Wishlist</h2>
+      <p>Oops!</p>
+      <p>Nothing here!</p>
+      <p>Go find something cute to add.</p>
+      <button class="shopnow">Wishlist 💕</button>
+      <img src="images/page1/Wishlist.image" alt="wishlist-image" style="width:100%;margin-top:10px;">
+    </div>
+
+    <!-- FOR ADD TO CART PAGE JS -->
+     <!-- ................... -->
+
+
+    <div id="cartSlider" class="cart-panel">
+      <button id="cartCloseBtn" aria-label="close cart">x</button>
+      <h2>Hey!</h2>
+      <p>Your cart is empty…</p>
+      <p>Should we fix that?</p>
+
+      <button class="cart-shopnow">Shop Now</button>
+
+      <img src="images/page1/Cart.image" alt="cart-image" style="width:90%; margin-top:30px;margin-left: 20px;">
+    </div>
+
     <!-- Header Section -->
     
      <div>
@@ -149,6 +176,8 @@
         </div>
       </div>
     </div>
-
+    <script src="JS-Asstes/wishlist.js"></script>
+    <script src="JS-Asstes/cart.js"></script>
+    <script src="JS-Asstes/login.js"></script>
   </body>
 </html>
